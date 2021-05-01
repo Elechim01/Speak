@@ -31,13 +31,14 @@ struct ContentView: View {
                 Button(action: {
                     self.suoni.RiproduttoreSuono()
                 }, label: {
-                    Text("Mosconi")
+                    Text("Mosconi ☠️")
                 })
                 .padding(.top)
                 GeometryReader{_ in
                     Rectangle()
                         .frame(width: 200,height: 10,alignment:.center)
                         .clipShape(Capsule())
+                        .foregroundColor(.green)
                     Rectangle()
                         .frame(width: self.suoni.time,height: 10,alignment:.center)
                         .foregroundColor(.red)
@@ -48,7 +49,7 @@ struct ContentView: View {
             }
             
         }
-        .frame(width: screen.width/7
+        .frame(width: screen.width/6
                , height: screen.height/5)
     }
 }

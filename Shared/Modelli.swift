@@ -85,11 +85,17 @@ class Suoni : ObservableObject{
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true){_ in
             if suono.isPlaying{
 //                print("🤖Suono",suono.currentTime)
+//                controllo che abbia finito di ciclare per il calcolo di r1 problema tecnico di tempistische
                 if i <= Int(r1){
-                print("🤖lunghezza",r)
+                    print("🤖lunghezza",r)
                     self.time += CGFloat(r)
                     print("time",self.time)
-                    
+//                    problema che se c'è un valore non perfetto non si completa la barra.
+                    if i == Int(r1){
+                        if self.time < 200{
+                            self.time = 200
+                        }
+                    }
                 }
             }
             else{
