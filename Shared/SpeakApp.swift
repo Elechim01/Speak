@@ -20,9 +20,11 @@ struct SpeakApp: App {
     }
 }
 //disablito il riquadro del focus ring
+#if os(macOS)
 extension NSTextField{
     open override var focusRingType: NSFocusRingType{
             get{.none}
             set{}
         }
 }
+#endif
