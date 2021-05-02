@@ -32,19 +32,27 @@ struct ContentView: View {
                     self.suoni.RiproduttoreSuono()
                 }, label: {
                     Text("Mosconi ☠️")
+                        .padding()
                 })
+                .buttonStyle(PlainButtonStyle())
+                .frame(width: 120, height: 20 )
+                .background(Color.red)
+                .clipShape(Capsule())
                 .padding(.top)
+                .padding(.bottom,5)
                 GeometryReader{_ in
-                    Rectangle()
-                        .frame(width: 200,height: 10,alignment:.center)
-                        .clipShape(Capsule())
-                        .foregroundColor(.green)
-                    Rectangle()
-                        .frame(width: self.suoni.time,height: 10,alignment:.center)
-                        .foregroundColor(.red)
-                        .clipShape(Capsule())
-                    
-                }.padding(.leading,30)
+                        Rectangle()
+                            .frame(width: 200,height: 10,alignment:.center)
+                            .clipShape(Capsule())
+                            .foregroundColor(.green)
+                        Rectangle()
+                            .frame(width: self.suoni.time,height: 10,alignment:.center)
+                            .foregroundColor(.red)
+                            .clipShape(Capsule())
+                }
+               
+                .padding(.leading,55)
+                
                 Spacer()
             }
             
