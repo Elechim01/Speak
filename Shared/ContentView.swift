@@ -84,7 +84,7 @@ struct ContentView: View {
 
         }
         .frame(width: screen.width/6
-               , height: screen.height/4)
+               , height: screen.height/5)
     }
 }
 
