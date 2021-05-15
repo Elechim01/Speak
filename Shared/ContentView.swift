@@ -8,7 +8,7 @@
 import SwiftUI
 let screen = NSScreen.main!.visibleFrame
 struct ContentView: View {
-    @State var testo : String = ""
+    @State var testo : String = "|"
     @State var linea : CGFloat = 0
     @StateObject var suoni = Suoni()
     var body: some View {
@@ -19,7 +19,8 @@ struct ContentView: View {
                 TextField("testo",text:$testo)
                     .textFieldStyle(PlainTextFieldStyle())
                     .foregroundColor(.black)
-                    .frame(width: screen.width/9, height: 30)
+                    .frame(width: screen.width/9,height:   30)
+//                    .frame(minHeight: CGFloat(30),maxHeight: CGFloat(60))
                     .background(Color.white)
                     .cornerRadius(10)
                 Button(action: {
@@ -40,6 +41,8 @@ struct ContentView: View {
                 .clipShape(Capsule())
                 .padding(.top)
                 .padding(.bottom,5)
+                .focusable()
+                
                 GeometryReader{_ in
                         Rectangle()
                             .frame(width: 200,height: 10,alignment:.center)
@@ -55,10 +58,33 @@ struct ContentView: View {
                 
                 Spacer()
             }
-            
+            .touchBar {
+                Spacer()
+//                bottone per la riproduzione di suoni
+                Button(action: {
+                    self.suoni.Riproduci(text: testo)
+                }, label: {
+                    Text("Riproduci")
+                        
+                })
+                .accentColor(.gray)
+                Spacer()
+//                bottone per mosconi
+                Button(action: {
+                    self.suoni.RiproduttoreSuono()
+                }, label: {
+                    Text("Mosconi")
+                        
+                })
+//                colore del bottone
+                .accentColor(.red)
+                Spacer()
+                
+            }
+
         }
         .frame(width: screen.width/6
-               , height: screen.height/5)
+               , height: screen.height/4)
     }
 }
 
