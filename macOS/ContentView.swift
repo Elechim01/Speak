@@ -8,7 +8,7 @@
 import SwiftUI
 let screen = NSScreen.main!.visibleFrame
 struct ContentView: View {
-    @State var testo : String = "|"
+    @State var testo : String = "ciao \n \n"
     @State var linea : CGFloat = 0
     @StateObject var suoni = Suoni()
     var body: some View {
@@ -18,11 +18,12 @@ struct ContentView: View {
                     .padding()
                 TextField("testo",text:$testo)
                     .textFieldStyle(PlainTextFieldStyle())
+                    .lineLimit(0)
                     .foregroundColor(.black)
-                    .frame(width: screen.width/9,height:   30)
-//                    .frame(minHeight: CGFloat(30),maxHeight: CGFloat(60))
+                    .frame(width: screen.width/9,height: 50)
+                   
                     .background(Color.white)
-                    .cornerRadius(10)
+                    .cornerRadius(5)
                 Button(action: {
                     self.suoni.Riproduci(text: testo)
                 }, label: {
@@ -84,7 +85,7 @@ struct ContentView: View {
 
         }
         .frame(width: screen.width/6
-               , height: screen.height/5)
+               , height: screen.height/4.51)
     }
 }
 

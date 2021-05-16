@@ -16,12 +16,9 @@ struct ContentViewP: View {
             VStack {
                 Text("Inserisci un testo da riprodurre")
                     .padding()
-                TextField("testo",text:$testo)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .foregroundColor(.black)
-//                    .frame(width: screen.width/9, height: 30)
-                    .background(Color.white)
-//                    .cornerRadius(10)
+                MultiLineTF(txt:$testo)
+                    .border(Color.gray.opacity(0.5),width: 1)
+                    .cornerRadius(3)
                     .padding()
                 Button(action: {
                     self.suoni.Riproduci(text: testo)
