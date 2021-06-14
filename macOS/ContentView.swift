@@ -18,9 +18,10 @@ struct ContentView: View {
                     .padding()
                 TextField("testo",text:$testo)
                     .textFieldStyle(PlainTextFieldStyle())
+                    .frame(width: screen.width/7,height: 50)
                     .lineLimit(0)
                     .foregroundColor(.black)
-                    .frame(width: screen.width/9,height: 50)
+                    
                    
                     .background(Color.white)
                     .cornerRadius(5)
