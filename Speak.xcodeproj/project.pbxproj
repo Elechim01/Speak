@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4006492267A729100AF44B4 /* suonoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C47B7015265EF95D001370E5 /* suonoicon.png */; };
 		C405CCE3263DED6E0031E98C /* Modelli.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405CCE2263DED6E0031E98C /* Modelli.swift */; };
 		C405CCE4263DED6E0031E98C /* Modelli.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405CCE2263DED6E0031E98C /* Modelli.swift */; };
 		C405CCF8263DF0CD0031E98C /* p16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C405CCE6263DF0CC0031E98C /* p16.mp3 */; };
@@ -45,9 +46,10 @@
 		C405CD19263DF0CD0031E98C /* p13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C405CCF6263DF0CD0031E98C /* p13.mp3 */; };
 		C405CD1A263DF0CD0031E98C /* p15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C405CCF7263DF0CD0031E98C /* p15.mp3 */; };
 		C405CD1B263DF0CD0031E98C /* p15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C405CCF7263DF0CD0031E98C /* p15.mp3 */; };
-		C47B7016265EF95D001370E5 /* suonoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C47B7015265EF95D001370E5 /* suonoicon.png */; };
-		C47B7017265EF95D001370E5 /* suonoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C47B7015265EF95D001370E5 /* suonoicon.png */; };
 		C48AC8092651742500A66628 /* MultilineaTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48AC8082651742500A66628 /* MultilineaTF.swift */; };
+		C4AACF23267D3D6100A793DC /* prova5.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AACF22267D3D6100A793DC /* prova5.png */; };
+		C4AACF24267D3D6100A793DC /* prova5.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AACF22267D3D6100A793DC /* prova5.png */; };
+		C4AACF2A267D409900A793DC /* onda-audio2.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AACF29267D409900A793DC /* onda-audio2.png */; };
 		C4AB19A2263DC104002C011B /* SpeakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AB198F263DC102002C011B /* SpeakApp.swift */; };
 		C4AB19A3263DC104002C011B /* SpeakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AB198F263DC102002C011B /* SpeakApp.swift */; };
 		C4AB19A5263DC104002C011B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AB1990263DC102002C011B /* ContentView.swift */; };
@@ -78,6 +80,8 @@
 		C405CCF7263DF0CD0031E98C /* p15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = p15.mp3; sourceTree = "<group>"; };
 		C47B7015265EF95D001370E5 /* suonoicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suonoicon.png; sourceTree = "<group>"; };
 		C48AC8082651742500A66628 /* MultilineaTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineaTF.swift; sourceTree = "<group>"; };
+		C4AACF22267D3D6100A793DC /* prova5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prova5.png; sourceTree = "<group>"; };
+		C4AACF29267D409900A793DC /* onda-audio2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onda-audio2.png"; sourceTree = "<group>"; };
 		C4AB198F263DC102002C011B /* SpeakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakApp.swift; sourceTree = "<group>"; };
 		C4AB1990263DC102002C011B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4AB1991263DC104002C011B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,8 +151,9 @@
 			children = (
 				C405CCE5263DF0B90031E98C /* suoni */,
 				C4AB198F263DC102002C011B /* SpeakApp.swift */,
+				C4AACF22267D3D6100A793DC /* prova5.png */,
 				C4AB1991263DC104002C011B /* Assets.xcassets */,
-				C47B7015265EF95D001370E5 /* suonoicon.png */,
+				C4AACF29267D409900A793DC /* onda-audio2.png */,
 				C405CCE2263DED6E0031E98C /* Modelli.swift */,
 			);
 			path = Shared;
@@ -166,6 +171,7 @@
 		C4AB1998263DC104002C011B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C47B7015265EF95D001370E5 /* suonoicon.png */,
 				C48AC8082651742500A66628 /* MultilineaTF.swift */,
 				C4AB19B0263DC1C5002C011B /* ContentViewP.swift */,
 				C4AB1999263DC104002C011B /* Info.plist */,
@@ -263,15 +269,17 @@
 			files = (
 				C405CD0E263DF0CD0031E98C /* p4.mp3 in Resources */,
 				C405CD00263DF0CD0031E98C /* p8.mp3 in Resources */,
+				C4AACF23267D3D6100A793DC /* prova5.png in Resources */,
 				C405CD16263DF0CD0031E98C /* p6.mp3 in Resources */,
 				C405CCFA263DF0CD0031E98C /* p17.mp3 in Resources */,
+				C4AACF2A267D409900A793DC /* onda-audio2.png in Resources */,
 				C405CCFE263DF0CD0031E98C /* p11.mp3 in Resources */,
+				C4006492267A729100AF44B4 /* suonoicon.png in Resources */,
 				C405CD1A263DF0CD0031E98C /* p15.mp3 in Resources */,
 				C405CD06263DF0CD0031E98C /* p18.mp3 in Resources */,
 				C405CD0A263DF0CD0031E98C /* p2.mp3 in Resources */,
 				C405CCF8263DF0CD0031E98C /* p16.mp3 in Resources */,
 				C405CD08263DF0CD0031E98C /* p7.mp3 in Resources */,
-				C47B7016265EF95D001370E5 /* suonoicon.png in Resources */,
 				C405CD10263DF0CD0031E98C /* p10.mp3 in Resources */,
 				C405CD14263DF0CD0031E98C /* p5.mp3 in Resources */,
 				C405CCFC263DF0CD0031E98C /* p14.mp3 in Resources */,
@@ -290,6 +298,7 @@
 			files = (
 				C405CD0F263DF0CD0031E98C /* p4.mp3 in Resources */,
 				C405CD01263DF0CD0031E98C /* p8.mp3 in Resources */,
+				C4AACF24267D3D6100A793DC /* prova5.png in Resources */,
 				C405CD17263DF0CD0031E98C /* p6.mp3 in Resources */,
 				C405CCFB263DF0CD0031E98C /* p17.mp3 in Resources */,
 				C405CCFF263DF0CD0031E98C /* p11.mp3 in Resources */,
@@ -298,7 +307,6 @@
 				C405CD0B263DF0CD0031E98C /* p2.mp3 in Resources */,
 				C405CCF9263DF0CD0031E98C /* p16.mp3 in Resources */,
 				C405CD09263DF0CD0031E98C /* p7.mp3 in Resources */,
-				C47B7017265EF95D001370E5 /* suonoicon.png in Resources */,
 				C405CD11263DF0CD0031E98C /* p10.mp3 in Resources */,
 				C405CD15263DF0CD0031E98C /* p5.mp3 in Resources */,
 				C405CCFD263DF0CD0031E98C /* p14.mp3 in Resources */,
@@ -456,7 +464,7 @@
 		C4AB19AB263DC104002C011B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
@@ -478,7 +486,7 @@
 		C4AB19AC263DC104002C011B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
@@ -501,7 +509,7 @@
 		C4AB19AE263DC104002C011B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -526,7 +534,7 @@
 		C4AB19AF263DC104002C011B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
